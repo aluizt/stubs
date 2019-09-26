@@ -1,0 +1,13 @@
+{
+  "id" : "71841b70-cfc8-4bc4-96c9-c694cf644a52",
+  "request" : {
+    "url" : "/test",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "71841b70-cfc8-4bc4-96c9-c694cf644a52"
+}
