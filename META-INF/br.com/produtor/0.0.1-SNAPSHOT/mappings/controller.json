@@ -1,13 +1,13 @@
 {
-  "id" : "5f26f808-dda5-46d1-bde4-7b12b5beed64",
+  "id" : "d04c0dc0-ea3f-48ea-871f-ee2bf8b636d0",
   "request" : {
     "url" : "/test",
     "method" : "GET"
   },
   "response" : {
-    "status" : 201,
+    "status" : 200,
     "body" : "OK",
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "5f26f808-dda5-46d1-bde4-7b12b5beed64"
+  "uuid" : "d04c0dc0-ea3f-48ea-871f-ee2bf8b636d0"
 }
