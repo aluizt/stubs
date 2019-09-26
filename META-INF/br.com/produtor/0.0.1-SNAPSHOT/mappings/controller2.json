@@ -1,5 +1,5 @@
 {
-  "id" : "4dd4c64a-9460-4dc1-bcdb-21bafd87ff8f",
+  "id" : "cb9d5383-32d3-4e64-a52a-b0256732c1ae",
   "request" : {
     "url" : "/test/user",
     "method" : "GET"
@@ -9,5 +9,5 @@
     "body" : "{\"name\":\"Alexandre tavares stub\",\"registration\":12345,\"credit\":true}",
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "4dd4c64a-9460-4dc1-bcdb-21bafd87ff8f"
+  "uuid" : "cb9d5383-32d3-4e64-a52a-b0256732c1ae"
 }
