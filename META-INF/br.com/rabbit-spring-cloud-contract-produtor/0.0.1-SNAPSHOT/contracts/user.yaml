@@ -4,6 +4,7 @@ input:
   triggeredBy: sendMessage()
 outputMessage:
   sentTo: userExchange
+
   body:
     name: Alexandre
     address: Rua Figueira
@@ -16,5 +17,8 @@ outputMessage:
         type: by_type
       - path: $.number
         type: by_type
+      - path: $.number
+        type: by_regex
+        value: "[0-9]{3}"
   headers:
     contentType: application/json
