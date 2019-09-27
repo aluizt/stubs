@@ -8,16 +8,6 @@ outputMessage:
     name: Alexandre
     address: Rua Figueira
     number: 479
-  matchers:
-    body:
-      - path: $.name
-        type: by_type
-      - path: $.address
-        type: by_type
-      - path: $.number
-        type: by_type
-      - path: $.number
-        type: by_regex
-        value: "[0-9]{3}"
+
   headers:
     contentType: application/json
