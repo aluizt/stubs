@@ -4,7 +4,6 @@ input:
   triggeredBy: sendMessage()
 outputMessage:
   sentTo: userExchange
-
   body:
     name: Alexandre
     address: Rua Figueira
