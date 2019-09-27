@@ -11,13 +11,13 @@ outputMessage:
   matchers:
     body:
       - path: $.name
-        type: by_regex
-        predefined: only_alpha_unicode
+        type: by_type
       - path: $.address
-        type: by_regex
-        predefined: only_alpha_unicode
+        type: by_type
+      - path: $.number
+        type: by_type
       - path: $.number
         type: by_regex
-        predefined: number
+        value: "[0-9]{3}"
   headers:
     contentType: application/json
