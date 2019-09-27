@@ -6,5 +6,13 @@ outputMessage:
   sentTo: userExchange
   body:
     name: Alexandre tavares
+  matchers:
+    body:
+      - path: $.name
+        type: by_regex
+        predefined: only_alpha_unicode
+      - path: $.address
+        type: by_regex
+        predefined: only_alpha_unicode
   headers:
     contentType: application/json
