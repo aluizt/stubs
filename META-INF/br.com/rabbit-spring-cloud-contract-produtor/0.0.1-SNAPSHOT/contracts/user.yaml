@@ -6,6 +6,8 @@ outputMessage:
   sentTo: userExchange
   body:
     name: Alexandre tavares
+    address: Rua Figueira
+    number: 479
   matchers:
     body:
       - path: $.name
@@ -14,5 +16,8 @@ outputMessage:
       - path: $.address
         type: by_regex
         predefined: only_alpha_unicode
+      - path: $.number
+        type: by_regex
+        predefined: number
   headers:
     contentType: application/json
