@@ -5,7 +5,7 @@ input:
 outputMessage:
   sentTo: invoiceExchange
   body:
-    number: 1998878888
+    number: 199887
     price: 125.00
   matchers:
     body:
