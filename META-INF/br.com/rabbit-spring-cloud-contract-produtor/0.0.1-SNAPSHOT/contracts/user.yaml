@@ -12,6 +12,9 @@ outputMessage:
     body:
       - path: $.name
         type: by_type
+      - path: $.name
+        type: by_regex
+        value: "[a-zA-Z]{1,255}"
       - path: $.address
         type: by_type
       - path: $.number
