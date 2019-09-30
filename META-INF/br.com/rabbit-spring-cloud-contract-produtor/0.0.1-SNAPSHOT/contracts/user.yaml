@@ -1,11 +1,11 @@
 description: Message sending test
 label: userTest
 input:
-  triggeredBy: sendMessage()
+  triggeredBy: sendUserMessage()
 outputMessage:
   sentTo: userExchange
   body:
-    name: Alexandre L. Tavares
+    name: João da Silva
     address: Rua Figueira
     number: 479
   matchers:
@@ -14,7 +14,7 @@ outputMessage:
         type: by_type
       - path: $.name
         type: by_regex
-        value: "[a-zA-Z .]{1,50}"
+        value: "[a-zA-Z . \u00C0-\u00ff]{1,50}"
       - path: $.address
         type: by_type
       - path: $.address
@@ -24,6 +24,6 @@ outputMessage:
         type: by_type
       - path: $.number
         type: by_regex
-        value: "[0-9]{3}"
+        value: "[0-9]{1,3}"
   headers:
     contentType: application/json
