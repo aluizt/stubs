@@ -17,6 +17,9 @@ outputMessage:
         value: "[a-zA-Z .]{1,50}"
       - path: $.address
         type: by_type
+      - path: $.address
+        type: by_regex
+        value: "[a-zA-Z .]{1,50}"
       - path: $.number
         type: by_type
       - path: $.number
