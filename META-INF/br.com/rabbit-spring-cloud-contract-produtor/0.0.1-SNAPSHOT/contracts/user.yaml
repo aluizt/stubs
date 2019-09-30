@@ -5,7 +5,7 @@ input:
 outputMessage:
   sentTo: userExchange
   body:
-    name: Alexandre
+    name: Alexandre L. Tavares
     address: Rua Figueira
     number: 479
   matchers:
@@ -14,7 +14,7 @@ outputMessage:
         type: by_type
       - path: $.name
         type: by_regex
-        value: "[a-zA-Z]{1,255}"
+        value: "[a-zA-Z .]{1,50}"
       - path: $.address
         type: by_type
       - path: $.number
