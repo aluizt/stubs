@@ -5,7 +5,7 @@ input:
 outputMessage:
   sentTo: userExchange
   body:
-    name: João da Silva
+    name: João da Silva s
     address: Rua Figueira
     number: 318
   matchers:
