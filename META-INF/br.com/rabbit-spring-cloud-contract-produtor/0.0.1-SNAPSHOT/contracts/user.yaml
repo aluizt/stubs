@@ -10,7 +10,7 @@ outputMessage:
     number: 318
   matchers:
     body:
-      - path: $.namec
+      - path: $.name
         type: by_type
       - path: $.name
         type: by_regex
