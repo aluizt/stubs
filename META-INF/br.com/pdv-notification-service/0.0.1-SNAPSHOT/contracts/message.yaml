@@ -1,0 +1,47 @@
+description: Message sending test
+label: messageTest
+input:
+  triggeredBy: sendNewMessage()
+outputMessage:
+  sentTo: defaultSendExchange
+  body:
+    messageId: 5da4544fcf2b236c79909f98
+    subsidiaryId: 1002
+    groupId: P554
+    userId: 8875
+    resume: Conforme nova norma
+    text: Conforme nova norma
+  matchers:
+    body:
+      - path: $.messageId
+        type: by_type
+      - path: $.messageId
+        type: by_regex
+        value: "[a-zA-Z 0-9]{1,24}"
+      - path: $.subsidiaryId
+        type: by_type
+      - path: $.subsidiaryId
+        type: by_regex
+        value: "[0-9]{1,5}"
+      - path: $.groupId
+        type: by_type
+      - path: $.groupId
+        type: by_regex
+        value: "[a-zA-Z .]{1,5}"
+      - path: $.userId
+        type: by_type
+      - path: $.userId
+        type: by_regex
+        value: "[0-9]{1,5}"
+      - path: $.resume
+        type: by_type
+      - path: $.resume
+        type: by_regex
+        value: "[a-zA-Z 0-9 .]{1,80}"
+      - path: $.text
+        type: by_type
+      - path: $.text
+        type: by_regex
+        value: "[a-zA-Z 0-9 .]{1,300}"
+  headers:
+    contentType: application/json
